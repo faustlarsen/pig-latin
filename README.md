@@ -60,7 +60,7 @@ Copyright (c) 2020 **_Taylor Baker, Constantine Yakubovski_**
 
 Here are the rules of Pig Latin:
 
- - for words beginning with a vowel, add "way to the end.
+ - For words beginning with a vowel, add "way to the end.
  - For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
  - If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
  - For words beginning with "y", treat "y" as a consonant.
@@ -99,6 +99,18 @@ Here are the rules of Pig Latin:
   Code: {the code we need to run to complete the test}
   Expect(pigLatin("a")).toEqual("away");
 
-  Test: {the thing that we are testing}
+  Test: "It will move all consenents up to the first vowel to the back of the word it started on."
+  Code: {the code we need to run to complete the test}
+  Expect: {theCodeWeRun.toEqual(SomeValue)}
+
+  Test: "After all front consenents have been moved to the back, it will add "ay" to the end of that word." 
+  Code: {the code we need to run to complete the test}
+  Expect: {theCodeWeRun.toEqual(SomeValue)}
+
+  Test: "If the first consonants include "qu", move the "u" along with the "q".
+  Code: {the code we need to run to complete the test}
+  Expect: {theCodeWeRun.toEqual(SomeValue)}
+
+  Test: "If there are no letters preceeding "y", treat it as a consonent. If there are letters preceeding "y", treat it as vowel."
   Code: {the code we need to run to complete the test}
   Expect: {theCodeWeRun.toEqual(SomeValue)}
